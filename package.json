@@ -1,0 +1,24 @@
+{
+  "name": "@14bytes-isophia/root",
+  "private": true,
+  "version": "0.1.0",
+  "description": "config files share website managed by monorepo && turborepo",
+  "author": "J1nH4ng<jinhang@mail.14bytes.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "prettier": "^3.2.5",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@9.0.6",
+  "engines": {
+    "node": ">=18"
+  }
+}
